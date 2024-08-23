@@ -1,0 +1,35 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: dodgerblue;
+    color: white;
+
+    .nav-list {
+        display: flex;
+        list-style: none;
+        padding: 1rem;
+        gap: 1rem;
+        
+        .nav-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .nav-link {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s;
+
+                &.active {
+                    color: #222;
+                    text-decoration: underline;
+                }
+
+                &:hover {
+                    color: #333;
+                }
+            }
+
+        }
+    }
+}
